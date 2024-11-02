@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düğmeler ve Hover Efekti</title>
+    <!-- Tailwind CSS'i dahil etmek için CDN bağlantısı -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- Düğmelerin kapsayıcısı -->
+    <div class="space-y-4">
+        <!-- bg-red-600: Arka plan rengini koyu kırmızı (#dc2626) yapar.
+text-white: Metin rengini beyaz (#ffffff) yapar.
+px-6: Yatay padding'i 1.5rem (24px) yapar.
+py-2: Dikey padding'i 0.5rem (8px) yapar.
+rounded-full: Tamamen yuvarlak köşeler yapar.
+hover
+: Fareyle üzerine gelindiğinde arka plan rengini daha koyu kırmızı (#b91c1c) yapar. -->
+        <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700">Kırmızı Düğme</button>
+        <!-- Yeşil düğme (hover efektiyle) -->
+        <button class="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">Yeşil Düğme</button>
+        <!-- Mavi düğme (hover efektiyle) -->
+        <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Mavi Düğme</button>
+    </div>
+</body>
+</html>

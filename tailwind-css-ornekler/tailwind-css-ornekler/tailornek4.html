@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basit Navigasyon Barı</title>
+    <!-- Tailwind CSS'i dahil etmek için CDN bağlantısı -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigasyon barı -->
+    <nav class="bg-white shadow-md">
+      <!--       bg-white: Arka plan rengini beyaz (#ffffff) yapar.
+shadow-md: Orta boyutta gölge efekti ekler. Öğeye hafif bir 3D etkisi verir.-->
+
+      <div class="max-w-6xl mx-auto px-4">
+        <!--       max-w-6xl: Maksimum genişliği 96rem (1536px) yapar. İçeriğin genişliğini sınırlar.
+mx-auto: Yatay margin'i otomatik yaparak öğeyi yatay olarak ortalar.
+px-4: Sağ ve sol padding'i 1rem (16px) yapar. -->
+
+        <div class="flex justify-between">
+          <!-- flex: Flexbox modelini etkinleştirir.
+items-center: Flex öğeleri dikey olarak ortalar.
+py-5: Dikey padding'i 1.25rem (20px) yapar.
+px-2: Yatay padding'i 0.5rem (8px) yapar.
+text-gray-700: Metin rengini koyu gri (#4a5568) yapar.
+hover
+: Fareyle üzerine gelindiğinde metin rengini daha koyu gri (#1a202c) yapar.-->
+          <a
+            href="#"
+            class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
+          >
+            <span class="font-bold">Logo</span>
+          </a>
+          <!-- Menü öğeleri -->
+          <div class="flex items-center space-x-4">
+            <!-- Ana sayfa bağlantısı -->
+            <a href="#" class="text-gray-700 hover:text-gray-900">Ana Sayfa</a>
+            <!-- Hakkında bağlantısı -->
+            <a href="#" class="text-gray-700 hover:text-gray-900">Hakkında</a>
+            <!-- İletişim bağlantısı -->
+            <a href="#" class="text-gray-700 hover:text-gray-900">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

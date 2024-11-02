@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Düzeni</title>
+    <!-- Tailwind CSS'i dahil etmek için CDN bağlantısı -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <!-- 3 sütunlu grid düzeni -->
+    <div class="grid grid-cols-3 gap-6">
+        <!-- grid: Öğeyi grid düzenine geçirir.
+grid-cols-3: Grid’i üç sütunlu yapar.
+gap-6: Grid öğeleri arasında 1.5rem (24px) boşluk oluşturur.-->
+        <div class="bg-white p-4 rounded shadow">Öğe 1</div>
+        <!-- Grid öğesi 2 -->
+        <div class="bg-white p-4 rounded shadow">Öğe 2</div>
+        <!--bg-white: Arka plan rengini beyaz (#ffffff) yapar.
+p-4: Her kenardan 1rem (16px) padding ekler.
+rounded: Köşeleri yuvarlar.
+shadow: Küçük bir gölge efekti ekler.-->
+        <div class="bg-white p-4 rounded shadow">Öğe 3</div>
+    </div>
+</body>
+</html>
